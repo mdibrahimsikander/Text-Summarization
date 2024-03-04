@@ -8,3 +8,14 @@ TrainingArguments:
   eval_steps: 500
   save_steps: 1e6
   gradient_accumulation_steps: 16
+
+  # TrainingArguments:
+  # num_train_epochs: 5                  # Increase the number of training epochs for more training iterations
+  # warmup_steps: 1000                   # Extend the warmup period to allow more time for learning rate adjustment
+  # per_device_train_batch_size: 4       # Increase the batch size to process more samples in parallel, improving training efficiency
+  # weight_decay: 0.01                   # Keep the weight decay for regularization
+  # logging_steps: 100                   # Increase the logging frequency for more frequent updates during training
+  # evaluation_strategy: epoch           # Evaluate the model at the end of each epoch for a more comprehensive assessment
+  # eval_steps: 500                      # Set evaluation steps to monitor performance during training
+  # save_steps: 2000                     # Save the model checkpoint more frequently to capture the latest improvements
+  # gradient_accumulation_steps: 4       # Increase gradient accumulation steps to simulate larger batch sizes and improve training stability
